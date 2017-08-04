@@ -1,4 +1,4 @@
-#Final Assignment for CMPS 160#
+# Final Assignment for CMPS 160 #
 
 Final Assignment for CMPS 160: Intro to Computer Graphics at UC Santa Cruz
 
