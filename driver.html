@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+      <meta charset="utf-8">
+      <title>CMPS 160 Program 4</title>
+   </head>
+
+   <body onload = "main()">
+      <canvas id="webgl" width="500" height="500"  style="border-style:solid">
+      Please use a browser that supports "canvas"
+      </canvas>
+
+      <script src = "./lib/webgl-utils.js"></script>
+      <script src = "./lib/webgl-debug.js"></script>
+      <script src = "./lib/cuon-utils.js"></script>
+      <script src = "./lib/cuon-matrix.js"></script>
+      <script src = "./lib/ioSOR.js"></script>
+      <script src = "./src/pointLight.js"></script>
+      <script src = "./src/myUtils.js"></script>
+      <script src = "./src/view.js"></script>
+      <script src = "./src/sor.js"></script>
+      <script src = "./src/prog4.js"></script>
+
+      <p> Upload an SOR: </p>
+      <input type="file" id="fileinput" />
+      <button id = "updateScreen"  type="button">Extract SOR</button>
+      <button id = "drawSOR" type="button">Draw New SOR</button>
+      <button id = "toggleDirec" type="button">Toggle Directional Lighting</button>
+      <button id = "addPointSrc" type="button">Add Point Source</button>
+      <button id = "switchView" type="button">Toggle View</button> 	  <br> <br>
+      <button id = "saveSOR" type="button">Save SOR</button>
+      <button id = "toggleNormals" type="button">Toggle Normals</button>
+      <button id = "toggleShading" type = "button"> Toggle Shading</button>
+      <button id = "toggleSpecular" type = "button"> Toggle Specular</button>
+      <button id = "togglePointSrc" type="button">Toggle Point Light</button>
+	    <button id = "toggleTexture" type="button">Toggle Textures</button> <br>
+     	<input type="file" id="texFile" />
+      <p> Adjust glossiness: <p>
+      <input type="range" id="glossSlider" defaultValue="1" min="0" max="20" />
+      <p> Choose Color: <p>
+      <input type="color" id="colorPicker">
+   </body>
+</html>
